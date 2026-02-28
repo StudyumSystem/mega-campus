@@ -3,46 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zukas — Where Ancient Governance Meets Web3 Innovation</title>
-  <meta name="description" content="Zukas is a hybrid laboratory bridging ancient democratic traditions with blockchain technology. Join 200+ builders prototyping future civilizations.">
+  <title>Zukas Summit 2025 — The World's Largest Web3 Governance Event</title>
+  <meta name="description" content="Zukas Summit 2025. 200+ builders, 10 days, 30+ countries. Join the world's most immersive blockchain governance experience in Kaş, Turkey.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="navbar__inner">
-      <a href="#" class="navbar__logo">
-        <svg width="120" height="40" viewBox="0 0 120 40">
-          <text x="0" y="30" font-family="Inter, sans-serif" font-weight="900" font-size="28" fill="#1a1a2e">Zu</text>
-          <text x="38" y="30" font-family="Inter, sans-serif" font-weight="900" font-size="28" fill="#f5c518">kas</text>
-        </svg>
-      </a>
-      <ul class="navbar__menu">
-        <li><a href="#about" class="navbar__link">About</a></li>
-        <li class="navbar__dropdown">
-          <a href="#speakers" class="navbar__link">Speakers <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-        </li>
-        <li class="navbar__dropdown">
-          <a href="#partners" class="navbar__link">Partners <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-        </li>
-        <li><a href="#startups" class="navbar__link">Startups</a></li>
-        <li><a href="#investors" class="navbar__link">Investors</a></li>
-        <li><a href="#media" class="navbar__link">Media</a></li>
-        <li class="navbar__dropdown">
-          <a href="#" class="navbar__link">More <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-        </li>
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">ZUKAS</a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#about">About the Summit</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#organizer">Organizer</a></li>
+        <li><a href="#media">Media accreditation</a></li>
       </ul>
-      <div class="navbar__actions">
-        <a href="#" class="navbar__login-link">Log in</a>
-        <a href="#register" class="navbar__cta">Pre-register</a>
-        <a href="#" class="navbar__cta navbar__cta--secondary">Exhibit</a>
-      </div>
-      <button class="navbar__toggle" aria-label="Toggle menu">
+      <a href="#tickets" class="nav__btn">Get Tickets</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -50,410 +35,395 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero__bg">
-      <div class="hero__gradient"></div>
-      <div class="hero__pattern"></div>
-    </div>
-    <div class="hero__container">
-      <div class="hero__left">
-        <div class="hero__badge-row">
-          <span class="hero__badge">Sep 9–19, 2025</span>
-          <span class="hero__badge">Kaş, Turkey</span>
+    <!-- Decorative elements -->
+    <div class="hero__deco hero__deco--1"></div>
+    <div class="hero__deco hero__deco--2"></div>
+    <div class="hero__deco hero__deco--3"></div>
+    <div class="hero__glow"></div>
+
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="hero__title-line1">ZUKAS</span>
+        <span class="hero__title-line2">SUMMIT 2025</span>
+      </h1>
+      <div class="hero__badges">
+        <div class="hero__badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          September 9-19
         </div>
-        <h1 class="hero__title">Zukas<br><span class="hero__title--accent">2025</span></h1>
-        <p class="hero__subtitle">Learning from ancient roots.<br>Scaling with blockchain tools.</p>
-        <p class="hero__desc">A 10-day immersive experience where 200 builders prototype future civilizations at the intersection of Web3, participatory governance, and cosmolocalism.</p>
-        <div class="hero__buttons">
-          <a href="#register" class="hero__btn hero__btn--primary">Apply Now</a>
-          <a href="#about" class="hero__btn hero__btn--ghost">Learn More →</a>
+        <div class="hero__badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Kaş, Turkey
         </div>
-      </div>
-      <div class="hero__right">
-        <div class="hero__card">
-          <div class="hero__card-img">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&auto=format" alt="Zukas Event" loading="lazy">
-            <div class="hero__card-overlay"></div>
-          </div>
-          <div class="hero__card-body">
-            <h3 class="hero__card-title">Pre-register now and save 50%</h3>
-            <p class="hero__card-text">Zukas returns to the Mediterranean. Pre-register for the next early-bird round.</p>
-            <a href="#register" class="hero__btn hero__btn--primary" style="width:100%;text-align:center;">Pre-register</a>
-          </div>
+        <div class="hero__badge hero__badge--accent">
+          the world's most immersive Web3 governance event
         </div>
       </div>
+      <a href="#tickets" class="hero__cta">
+        Tickets from $60 &nbsp;|&nbsp; Participate
+      </a>
     </div>
-    <div class="hero__stats-bar">
-      <div class="hero__stats-inner">
-        <div class="hero__stat">
-          <span class="hero__stat-num" data-count="200" data-suffix="+">0</span>
-          <span class="hero__stat-label">Participants</span>
+  </section>
+
+  <!-- ===== INFO CARD ===== -->
+  <section class="info-section">
+    <div class="info-card">
+      <div class="info-card__left">
+        <div class="info-item">
+          <div class="info-item__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <p>A hybrid laboratory that builds bridges between the past and the future — where ancient governance meets blockchain innovation</p>
         </div>
-        <div class="hero__stat-divider"></div>
-        <div class="hero__stat">
-          <span class="hero__stat-num" data-count="10" data-suffix=" Days">0</span>
-          <span class="hero__stat-label">Immersive Program</span>
+        <div class="info-item">
+          <div class="info-item__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <p>200 selected participants from 30+ countries — builders, DAO founders, academics, researchers, digital nomads, artists</p>
         </div>
-        <div class="hero__stat-divider"></div>
-        <div class="hero__stat">
-          <span class="hero__stat-num" data-count="50" data-suffix="+">0</span>
-          <span class="hero__stat-label">Workshops &amp; Talks</span>
+        <div class="info-item">
+          <div class="info-item__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p>Hackathons, workshops, masterclasses — prototyping future civilizations with Web3, participatory governance, and cosmolocalism</p>
         </div>
-        <div class="hero__stat-divider"></div>
-        <div class="hero__stat">
-          <span class="hero__stat-num" data-count="30" data-suffix="+">0</span>
-          <span class="hero__stat-label">Countries</span>
+        <a href="#about" class="info-card__btn">
+          <span class="info-card__btn-icon">→</span>
+          Learn more about the summit
+          <span class="info-card__btn-arrow">›</span>
+        </a>
+      </div>
+      <div class="info-card__right">
+        <div class="info-card__image-wrap">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop&auto=format" alt="Zukas Summit" class="info-card__image">
         </div>
+        <div class="info-card__mini-cards">
+          <div class="info-card__mini">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=250&fit=crop&auto=format" alt="Night Summit">
+            <span>Night Summit</span>
+          </div>
+          <div class="info-card__mini">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=250&fit=crop&auto=format" alt="Hackathon">
+            <span>Hackathons</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stats__item">
+        <span class="stats__number" data-count="200" data-suffix="+">0</span>
+        <span class="stats__label">Participants</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number" data-count="10" data-suffix="">0</span>
+        <span class="stats__label">Days Immersive</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number" data-count="50" data-suffix="+">0</span>
+        <span class="stats__label">Workshops & Talks</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number" data-count="30" data-suffix="+">0</span>
+        <span class="stats__label">Countries</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number" data-count="100" data-suffix="+">0</span>
+        <span class="stats__label">Mentors</span>
       </div>
     </div>
   </section>
 
   <!-- ===== SPEAKERS ===== -->
-  <section class="section" id="speakers">
+  <section class="section section--dark" id="speakers">
     <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">They've spoken at our events</h2>
-      </div>
-      <div class="speakers-grid fade-up">
-        <div class="speaker-card">
-          <div class="speaker-card__img">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&auto=format" alt="Speaker">
+      <h2 class="section__title section__title--center">Speakers</h2>
+      <div class="speakers">
+        <div class="speaker">
+          <div class="speaker__photo">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop&auto=format" alt="Speaker">
+            <div class="speaker__overlay"></div>
           </div>
-          <h4 class="speaker-card__name">Vitalik Buterin</h4>
-          <p class="speaker-card__role">Co-founder, Ethereum</p>
+          <h4 class="speaker__name">Vitalik Buterin</h4>
+          <p class="speaker__role">Co-founder, Ethereum</p>
         </div>
-        <div class="speaker-card">
-          <div class="speaker-card__img">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&auto=format" alt="Speaker">
+        <div class="speaker">
+          <div class="speaker__photo">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&auto=format" alt="Speaker">
+            <div class="speaker__overlay"></div>
           </div>
-          <h4 class="speaker-card__name">Audrey Tang</h4>
-          <p class="speaker-card__role">Digital Minister, Taiwan</p>
+          <h4 class="speaker__name">Audrey Tang</h4>
+          <p class="speaker__role">Digital Minister, Taiwan</p>
         </div>
-        <div class="speaker-card">
-          <div class="speaker-card__img">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&auto=format" alt="Speaker">
+        <div class="speaker">
+          <div class="speaker__photo">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&auto=format" alt="Speaker">
+            <div class="speaker__overlay"></div>
           </div>
-          <h4 class="speaker-card__name">Balaji Srinivasan</h4>
-          <p class="speaker-card__role">Author, The Network State</p>
+          <h4 class="speaker__name">Balaji Srinivasan</h4>
+          <p class="speaker__role">Author, The Network State</p>
         </div>
-        <div class="speaker-card">
-          <div class="speaker-card__img">
-            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&auto=format" alt="Speaker">
+        <div class="speaker">
+          <div class="speaker__photo">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop&auto=format" alt="Speaker">
+            <div class="speaker__overlay"></div>
           </div>
-          <h4 class="speaker-card__name">Primavera De Filippi</h4>
-          <p class="speaker-card__role">Researcher, Harvard / CNRS</p>
+          <h4 class="speaker__name">Primavera De Filippi</h4>
+          <p class="speaker__role">Researcher, Harvard / CNRS</p>
         </div>
-        <div class="speaker-card">
-          <div class="speaker-card__img">
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&auto=format" alt="Speaker">
+        <div class="speaker">
+          <div class="speaker__photo">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop&auto=format" alt="Speaker">
+            <div class="speaker__overlay"></div>
           </div>
-          <h4 class="speaker-card__name">Juan Benet</h4>
-          <p class="speaker-card__role">Founder, Protocol Labs</p>
+          <h4 class="speaker__name">Juan Benet</h4>
+          <p class="speaker__role">Founder, Protocol Labs</p>
         </div>
-        <div class="speaker-card">
-          <div class="speaker-card__img">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&auto=format" alt="Speaker">
+        <div class="speaker">
+          <div class="speaker__photo">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&auto=format" alt="Speaker">
+            <div class="speaker__overlay"></div>
           </div>
-          <h4 class="speaker-card__name">Glen Weyl</h4>
-          <p class="speaker-card__role">Author, Radical Markets</p>
+          <h4 class="speaker__name">Glen Weyl</h4>
+          <p class="speaker__role">Author, Radical Markets</p>
         </div>
-        <div class="speaker-card">
-          <div class="speaker-card__img">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&auto=format" alt="Speaker">
+        <div class="speaker">
+          <div class="speaker__photo">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop&auto=format" alt="Speaker">
+            <div class="speaker__overlay"></div>
           </div>
-          <h4 class="speaker-card__name">Aya Miyaguchi</h4>
-          <p class="speaker-card__role">Director, Ethereum Foundation</p>
+          <h4 class="speaker__name">Aya Miyaguchi</h4>
+          <p class="speaker__role">Director, Ethereum Foundation</p>
         </div>
-        <div class="speaker-card">
-          <div class="speaker-card__img">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&auto=format" alt="Speaker">
+        <div class="speaker">
+          <div class="speaker__photo">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&auto=format" alt="Speaker">
+            <div class="speaker__overlay"></div>
           </div>
-          <h4 class="speaker-card__name">Sandeep Nailwal</h4>
-          <p class="speaker-card__role">Co-founder, Polygon</p>
+          <h4 class="speaker__name">Sandeep Nailwal</h4>
+          <p class="speaker__role">Co-founder, Polygon</p>
         </div>
-      </div>
-      <div class="section__link-row">
-        <a href="#" class="section__link">See all Speakers →</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== PARTNERS ===== -->
-  <section class="section section--alt" id="partners">
+  <!-- ===== ABOUT ===== -->
+  <section class="section section--dark" id="about">
     <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">They've attended as partners</h2>
-      </div>
-      <div class="logo-grid logo-grid--5 fade-up">
-        <div class="logo-item"><span>Ethereum</span></div>
-        <div class="logo-item"><span>Polygon</span></div>
-        <div class="logo-item"><span>Protocol Labs</span></div>
-        <div class="logo-item"><span>Chainlink</span></div>
-        <div class="logo-item"><span>Gitcoin</span></div>
-        <div class="logo-item"><span>Aave</span></div>
-        <div class="logo-item"><span>Uniswap</span></div>
-        <div class="logo-item"><span>Arbitrum</span></div>
-        <div class="logo-item"><span>Optimism</span></div>
-        <div class="logo-item"><span>ENS</span></div>
-        <div class="logo-item"><span>NEAR</span></div>
-        <div class="logo-item"><span>Filecoin</span></div>
-        <div class="logo-item"><span>MakerDAO</span></div>
-        <div class="logo-item"><span>Gnosis</span></div>
-        <div class="logo-item"><span>Worldcoin</span></div>
-      </div>
-      <div class="section__link-row">
-        <a href="#" class="section__link">Learn more →</a>
+      <h2 class="section__title section__title--center">About the Summit</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card__img">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=400&fit=crop&auto=format" alt="Governance">
+          </div>
+          <h3>Governance & Democracy</h3>
+          <p>Prototype governance frameworks inspired by ancient democracies, scaled through blockchain infrastructure and zero-knowledge cryptography.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__img">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop&auto=format" alt="Web3">
+          </div>
+          <h3>Web3 & Network States</h3>
+          <p>Explore decentralized accelerationism, public goods funding, and the future of digital coordination at the intersection of tech and society.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__img">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop&auto=format" alt="AI">
+          </div>
+          <h3>AI & Autonomous Agents</h3>
+          <p>Dive into artificial intelligence, autonomous systems, and how AI intersects with decentralized decision-making and governance.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__img">
+            <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&h=400&fit=crop&auto=format" alt="ReFi">
+          </div>
+          <h3>Regenerative Finance</h3>
+          <p>Explore ReFi, decentralized physical infrastructure networks, and how blockchain can power regenerative economic systems.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== STARTUPS ===== -->
-  <section class="section" id="startups">
+  <!-- ===== SCHEDULE ===== -->
+  <section class="section section--darker" id="schedule">
     <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">They came as early-stage projects</h2>
-      </div>
-      <div class="logo-grid logo-grid--5 fade-up">
-        <div class="logo-item"><span>Lens Protocol</span></div>
-        <div class="logo-item"><span>Zuzalu</span></div>
-        <div class="logo-item"><span>EigenLayer</span></div>
-        <div class="logo-item"><span>Farcaster</span></div>
-        <div class="logo-item"><span>Safe</span></div>
-        <div class="logo-item"><span>Scroll</span></div>
-        <div class="logo-item"><span>zkSync</span></div>
-        <div class="logo-item"><span>StarkNet</span></div>
-        <div class="logo-item"><span>Celestia</span></div>
-        <div class="logo-item"><span>Nouns DAO</span></div>
-        <div class="logo-item"><span>Degen Chain</span></div>
-        <div class="logo-item"><span>Base</span></div>
-        <div class="logo-item"><span>Blast</span></div>
-        <div class="logo-item"><span>Monad</span></div>
-        <div class="logo-item"><span>Berachain</span></div>
-      </div>
-      <div class="section__link-row">
-        <a href="#" class="section__link">Learn more →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== MEDIA ===== -->
-  <section class="section section--alt" id="media">
-    <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">They've covered our events</h2>
-      </div>
-      <div class="logo-grid logo-grid--5 fade-up">
-        <div class="logo-item"><span>CoinDesk</span></div>
-        <div class="logo-item"><span>The Block</span></div>
-        <div class="logo-item"><span>Decrypt</span></div>
-        <div class="logo-item"><span>Bankless</span></div>
-        <div class="logo-item"><span>CoinTelegraph</span></div>
-        <div class="logo-item"><span>Wired</span></div>
-        <div class="logo-item"><span>TechCrunch</span></div>
-        <div class="logo-item"><span>Forbes</span></div>
-        <div class="logo-item"><span>Bloomberg</span></div>
-        <div class="logo-item"><span>MIT Tech</span></div>
-        <div class="logo-item"><span>Unchained</span></div>
-        <div class="logo-item"><span>Rekt News</span></div>
-        <div class="logo-item"><span>Defiant</span></div>
-        <div class="logo-item"><span>DL News</span></div>
-        <div class="logo-item"><span>Messari</span></div>
-      </div>
-      <div class="section__link-row">
-        <a href="#" class="section__link">Learn more →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== INVESTORS ===== -->
-  <section class="section" id="investors">
-    <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">They came as investors</h2>
-      </div>
-      <div class="logo-grid logo-grid--5 fade-up">
-        <div class="logo-item"><span>a16z Crypto</span></div>
-        <div class="logo-item"><span>Paradigm</span></div>
-        <div class="logo-item"><span>Polychain</span></div>
-        <div class="logo-item"><span>Dragonfly</span></div>
-        <div class="logo-item"><span>Pantera</span></div>
-        <div class="logo-item"><span>Multicoin</span></div>
-        <div class="logo-item"><span>Framework</span></div>
-        <div class="logo-item"><span>Variant</span></div>
-        <div class="logo-item"><span>1kx</span></div>
-        <div class="logo-item"><span>Electric Cap.</span></div>
-        <div class="logo-item"><span>Placeholder</span></div>
-        <div class="logo-item"><span>Delphi</span></div>
-        <div class="logo-item"><span>Galaxy</span></div>
-        <div class="logo-item"><span>Coinbase V.</span></div>
-        <div class="logo-item"><span>Sequoia</span></div>
-      </div>
-      <div class="section__link-row">
-        <a href="#" class="section__link">Learn more →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== REVIEWS ===== -->
-  <section class="section section--alt" id="reviews">
-    <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">What our community is saying</h2>
-      </div>
-      <div class="reviews-row fade-up">
-        <div class="review">
-          <div class="review__stars">
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-          </div>
-          <p class="review__text">"Zukas was unlike any conference I've attended. The blend of ancient governance wisdom with cutting-edge blockchain technology created an environment where truly novel ideas could emerge."</p>
-          <div class="review__author">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&auto=format" alt="Alena" class="review__avatar">
-            <div>
-              <div class="review__name">Alena Kozhevnikova</div>
-              <div class="review__role">DAO Researcher, Ethereum Foundation</div>
-            </div>
+      <h2 class="section__title section__title--center">Schedule</h2>
+      <div class="schedule">
+        <div class="schedule__day">
+          <h3 class="schedule__day-title">Days 1-3 · Foundations</h3>
+          <div class="schedule__items">
+            <div class="schedule__item"><span class="schedule__time">09:00</span><span class="schedule__event">Opening Ceremony & Keynotes</span></div>
+            <div class="schedule__item"><span class="schedule__time">11:00</span><span class="schedule__event">Workshop: Intro to Governance Primitives</span></div>
+            <div class="schedule__item"><span class="schedule__time">14:00</span><span class="schedule__event">Hackathon Kickoff & Team Formation</span></div>
+            <div class="schedule__item"><span class="schedule__time">16:00</span><span class="schedule__event">Panel: Network States in Practice</span></div>
+            <div class="schedule__item"><span class="schedule__time">19:00</span><span class="schedule__event">Welcome Dinner & Networking</span></div>
           </div>
         </div>
-        <div class="review">
-          <div class="review__stars">
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-          </div>
-          <p class="review__text">"Ten days of pure immersion. I came to hack on ZK proofs and left with a governance framework my team is now implementing. The Mediterranean setting doesn't hurt either."</p>
-          <div class="review__author">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&auto=format" alt="Marco" class="review__avatar">
-            <div>
-              <div class="review__name">Marco Torres</div>
-              <div class="review__role">CTO, DeFi Protocol · Spain</div>
-            </div>
+        <div class="schedule__day">
+          <h3 class="schedule__day-title">Days 4-7 · Deep Dives</h3>
+          <div class="schedule__items">
+            <div class="schedule__item"><span class="schedule__time">09:00</span><span class="schedule__event">ZK Cryptography Masterclass</span></div>
+            <div class="schedule__item"><span class="schedule__time">11:00</span><span class="schedule__event">Workshop: DAO Governance Design</span></div>
+            <div class="schedule__item"><span class="schedule__time">14:00</span><span class="schedule__event">Hackathon Sprint Sessions</span></div>
+            <div class="schedule__item"><span class="schedule__time">16:00</span><span class="schedule__event">Panel: AI Meets Decentralization</span></div>
+            <div class="schedule__item"><span class="schedule__time">20:00</span><span class="schedule__event">Night Summit · Coastal Venues</span></div>
           </div>
         </div>
-        <div class="review">
-          <div class="review__stars">
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="#f5c518"><path d="M8.5 0l2.6 5.3 5.9.9-4.3 4.1 1 5.8L8.5 13.4 3.3 16.1l1-5.8L0 6.2l5.9-.9z"/></svg>
-          </div>
-          <p class="review__text">"As a digital nomad and artist, I wasn't sure Zukas was for me. The crossover between cultural production and decentralized tech opened a completely new creative direction."</p>
-          <div class="review__author">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&auto=format" alt="Suki" class="review__avatar">
-            <div>
-              <div class="review__name">Suki Nakamura</div>
-              <div class="review__role">Generative Artist · Japan</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section__link-row">
-        <a href="#" class="section__link">Read all reviews →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== BENTO FEATURES ===== -->
-  <section class="section" id="experience">
-    <div class="container">
-      <div class="bento fade-up">
-        <div class="bento__item bento__item--wide">
-          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&h=500&fit=crop&auto=format" alt="Masterclass" class="bento__bg">
-          <div class="bento__overlay"></div>
-          <div class="bento__content">
-            <span class="bento__tag">Masterclasses</span>
-            <h3 class="bento__title">Expert-led. Future-focused.</h3>
-            <p class="bento__desc">Deep-dive sessions led by protocol founders, governance scholars, and cryptography pioneers.</p>
-            <a href="#" class="bento__link">Explore Masterclasses →</a>
-          </div>
-        </div>
-        <div class="bento__item">
-          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=500&fit=crop&auto=format" alt="Meetups" class="bento__bg">
-          <div class="bento__overlay"></div>
-          <div class="bento__content">
-            <span class="bento__tag">Meetups</span>
-            <h3 class="bento__title">Find your tribe</h3>
-            <p class="bento__desc">Curated sessions connecting builders with shared passions.</p>
-            <a href="#" class="bento__link">View Meetups →</a>
-          </div>
-        </div>
-        <div class="bento__item">
-          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=500&fit=crop&auto=format" alt="Night Summit" class="bento__bg">
-          <div class="bento__overlay"></div>
-          <div class="bento__content">
-            <span class="bento__tag">Night Summit</span>
-            <h3 class="bento__title">Where deals are made</h3>
-            <p class="bento__desc">Informal gatherings at stunning coastal venues.</p>
-            <a href="#" class="bento__link">Night Summit →</a>
-          </div>
-        </div>
-        <div class="bento__item bento__item--wide">
-          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&h=500&fit=crop&auto=format" alt="Hackathon" class="bento__bg">
-          <div class="bento__overlay bento__overlay--gold"></div>
-          <div class="bento__content">
-            <span class="bento__tag">Hackathons</span>
-            <h3 class="bento__title">Build the future. Ship in 10 days.</h3>
-            <p class="bento__desc">Work alongside the brightest minds in Web3, governance, ZK cryptography, and AI autonomous agents.</p>
-            <a href="#" class="bento__link">Join Hackathon →</a>
+        <div class="schedule__day">
+          <h3 class="schedule__day-title">Days 8-10 · Convergence</h3>
+          <div class="schedule__items">
+            <div class="schedule__item"><span class="schedule__time">09:00</span><span class="schedule__event">Hackathon Final Presentations</span></div>
+            <div class="schedule__item"><span class="schedule__time">12:00</span><span class="schedule__event">ReFi & Public Goods Showcase</span></div>
+            <div class="schedule__item"><span class="schedule__time">15:00</span><span class="schedule__event">Closing Keynotes & Awards</span></div>
+            <div class="schedule__item"><span class="schedule__time">18:00</span><span class="schedule__event">Gala Dinner with Speakers</span></div>
+            <div class="schedule__item"><span class="schedule__time">21:00</span><span class="schedule__event">Farewell Party</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== NEWSLETTER / PRE-REGISTER ===== -->
-  <section class="cta-section" id="register">
-    <div class="cta-section__bg">
-      <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1600&h=600&fit=crop&auto=format" alt="Mediterranean coast" class="cta-section__img">
-      <div class="cta-section__overlay"></div>
-    </div>
-    <div class="container cta-section__inner">
-      <div class="cta-section__content">
-        <h2>Stay in the loop</h2>
-        <p>Pre-register for the next Zukas edition. Be first to know about early-bird pricing, speaker announcements, and scholarship applications.</p>
-      </div>
-      <form class="cta-section__form" action="#" method="post">
-        <div class="cta-section__fields">
-          <input type="email" placeholder="Your email address" required>
-          <input type="text" placeholder="First name">
+  <!-- ===== TICKETS ===== -->
+  <section class="section section--dark" id="tickets">
+    <div class="container">
+      <h2 class="section__title section__title--center">Tickets</h2>
+      <div class="tickets">
+        <div class="ticket">
+          <div class="ticket__header">
+            <h3 class="ticket__tier">Light</h3>
+            <div class="ticket__price">$60</div>
+          </div>
+          <ul class="ticket__features">
+            <li>Access to all keynotes</li>
+            <li>Workshop participation</li>
+            <li>Community networking</li>
+            <li>Event materials</li>
+          </ul>
+          <a href="#" class="ticket__btn">Get Tickets</a>
         </div>
-        <button type="submit" class="hero__btn hero__btn--primary">Sign up for newsletter</button>
-        <p class="cta-section__fine">By signing up you agree to our <a href="#">Privacy Policy</a>.</p>
+        <div class="ticket">
+          <div class="ticket__header">
+            <h3 class="ticket__tier">Standard</h3>
+            <div class="ticket__price">$250</div>
+          </div>
+          <ul class="ticket__features">
+            <li>Everything in Light</li>
+            <li>Hackathon participation</li>
+            <li>Masterclass access</li>
+            <li>Night Summit entry</li>
+            <li>Meals included</li>
+          </ul>
+          <a href="#" class="ticket__btn">Get Tickets</a>
+        </div>
+        <div class="ticket ticket--featured">
+          <div class="ticket__badge">Most Popular</div>
+          <div class="ticket__header">
+            <h3 class="ticket__tier">VIP</h3>
+            <div class="ticket__price">$1,700</div>
+          </div>
+          <ul class="ticket__features">
+            <li>Everything in Standard</li>
+            <li>VIP Lounge access</li>
+            <li>Priority seating at keynotes</li>
+            <li>Speaker meet & greet</li>
+            <li>Coffee breaks & lunches</li>
+            <li>Video recordings access</li>
+          </ul>
+          <a href="#" class="ticket__btn ticket__btn--accent">Get VIP Tickets</a>
+        </div>
+        <div class="ticket">
+          <div class="ticket__header">
+            <h3 class="ticket__tier">Platinum</h3>
+            <div class="ticket__price">$5,000</div>
+          </div>
+          <ul class="ticket__features">
+            <li>Everything in VIP</li>
+            <li>Platinum Lounge</li>
+            <li>First-class catering</li>
+            <li>Gala dinner with speakers</li>
+            <li>1-on-1 mentorship session</li>
+            <li>Scholarship sponsorship</li>
+            <li>After-party access</li>
+          </ul>
+          <a href="#" class="ticket__btn">Get Platinum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VENUE ===== -->
+  <section class="venue" id="venue">
+    <div class="venue__bg">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&h=700&fit=crop&auto=format" alt="Kaş Turkey Mediterranean Coast">
+      <div class="venue__overlay"></div>
+    </div>
+    <div class="container venue__content">
+      <h2 class="section__title">Venue</h2>
+      <h3 class="venue__name">Kaş, Turkey</h3>
+      <p class="venue__desc">A stunning Mediterranean coastal town where ancient Lycian democratic practices first emerged. The perfect setting to reimagine governance for the digital age — surrounded by turquoise waters, ancient ruins, and boundless inspiration.</p>
+      <div class="venue__details">
+        <div class="venue__detail">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Antalya Province, Mediterranean Coast
+        </div>
+        <div class="venue__detail">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          September 9–19, 2025
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ORGANIZER ===== -->
+  <section class="section section--dark" id="organizer">
+    <div class="container">
+      <h2 class="section__title section__title--center">Organizer</h2>
+      <div class="organizer">
+        <div class="organizer__logo">ZUKAS</div>
+        <p class="organizer__text">Zukas (Zuzalu Kaş) is a blockchain innovation initiative combining ancient governance traditions with Web3 technology. Rooted in Mediterranean lands where early democratic practices emerged, Zukas serves as a living laboratory building bridges between past wisdom and future innovation.</p>
+        <div class="organizer__links">
+          <a href="#" class="organizer__link">zukas.city</a>
+          <a href="#" class="organizer__link">Twitter / X</a>
+          <a href="#" class="organizer__link">Telegram</a>
+          <a href="#" class="organizer__link">Discord</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MEDIA ACCREDITATION ===== -->
+  <section class="section section--darker" id="media">
+    <div class="container">
+      <h2 class="section__title section__title--center">Media Accreditation</h2>
+      <div class="media-section">
+        <p class="media-section__text">Are you a journalist, blogger, or media professional? Apply for media accreditation to cover the Zukas Summit 2025.</p>
+        <div class="media-section__stats">
+          <div class="media-section__stat">
+            <span class="media-section__stat-num">100+</span>
+            <span class="media-section__stat-label">International Bloggers</span>
+          </div>
+          <div class="media-section__stat">
+            <span class="media-section__stat-num">50+</span>
+            <span class="media-section__stat-label">Accredited Journalists</span>
+          </div>
+        </div>
+        <a href="#" class="hero__cta" style="display:inline-flex;margin-top:1.5rem;">Apply for Accreditation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER CTA ===== -->
+  <section class="cta-band">
+    <div class="container cta-band__inner">
+      <h2>Don't miss out</h2>
+      <p>Pre-register for the next Zukas Summit. Be first to know about early-bird pricing and speaker announcements.</p>
+      <form class="cta-band__form" action="#">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" class="hero__cta">Join Now</button>
       </form>
-    </div>
-  </section>
-
-  <!-- ===== SECONDARY CTA ===== -->
-  <section class="section">
-    <div class="container">
-      <div class="action-cards fade-up">
-        <a href="#register" class="action-card">
-          <div class="action-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
-          </div>
-          <h3>Pre-register</h3>
-          <p>Secure your spot among 200 selected builders</p>
-        </a>
-        <a href="#" class="action-card">
-          <div class="action-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          </div>
-          <h3>Partner with us</h3>
-          <p>Sponsor, exhibit, or co-create the experience</p>
-        </a>
-        <a href="#" class="action-card">
-          <div class="action-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-          </div>
-          <h3>Volunteer</h3>
-          <p>Join the crew making Zukas happen on the ground</p>
-        </a>
-      </div>
     </div>
   </section>
 
@@ -462,61 +432,52 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__brand">
-          <div class="footer__logo">
-            <svg width="100" height="36" viewBox="0 0 100 36">
-              <text x="0" y="28" font-family="Inter, sans-serif" font-weight="900" font-size="26" fill="#1a1a2e">Zu</text>
-              <text x="34" y="28" font-family="Inter, sans-serif" font-weight="900" font-size="26" fill="#f5c518">kas</text>
-            </svg>
-          </div>
-          <p class="footer__tagline">Learning from ancient roots.<br>Scaling with blockchain tools.</p>
-          <div class="footer__social">
-            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 2H3.6A1.6 1.6 0 002 3.6v16.8A1.6 1.6 0 003.6 22h16.8a1.6 1.6 0 001.6-1.6V3.6A1.6 1.6 0 0020.4 2zM8.3 18.3H5.7V9.7h2.6v8.6zM7 8.6a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM18.3 18.3h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3h-2.6V9.7h2.5v1.2h0a2.7 2.7 0 012.5-1.4c2.7 0 3.2 1.8 3.2 4v4.8z"/></svg></a>
-            <a href="#" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 2h3.5l-7.7 8.8L23 22h-7.1l-5.5-7.2L4.5 22H1l8.2-9.4L.7 2h7.3l5 6.6L18.2 2zm-1.2 18h2L7.1 4H5l12 16z"/></svg></a>
-            <a href="#" aria-label="Telegram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.9 6.8l-1.7 7.8c-.1.5-.5.7-.9.4l-2.5-1.8-1.2 1.2c-.1.1-.3.2-.5.2l.2-2.5 4.8-4.3c.2-.2 0-.3-.3-.1L8.8 13l-2.4-.8c-.5-.2-.5-.5.1-.7l9.4-3.6c.4-.2.8.1.7.6l.3.3z"/></svg></a>
-            <a href="#" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.7a19.5 19.5 0 00-4.8-1.5 14.6 14.6 0 00-.6 1.3 18 18 0 00-5.4 0 13 13 0 00-.7-1.3A19.4 19.4 0 004 4.7 20 20 0 00.8 17.7a19.6 19.6 0 006 3 14.8 14.8 0 001.3-2 12.5 12.5 0 01-2-.9l.5-.4a14 14 0 0011.9 0l.5.4a12.7 12.7 0 01-2 1 14.6 14.6 0 001.2 2 19.5 19.5 0 006-3A20 20 0 0020.3 4.7zM8.7 15a2.2 2.2 0 01-2.1-2.3A2.2 2.2 0 018.7 10a2.2 2.2 0 012 2.3 2.2 2.2 0 01-2 2.4v.3zm6.6 0a2.2 2.2 0 01-2-2.3 2.2 2.2 0 012-2.4 2.2 2.2 0 012.1 2.3 2.2 2.2 0 01-2 2.4v.3z"/></svg></a>
-          </div>
+          <div class="footer__logo">ZUKAS</div>
+          <p>Learning from ancient roots.<br>Scaling with blockchain tools.</p>
         </div>
         <div class="footer__col">
           <h4>Event</h4>
           <ul>
-            <li><a href="#about">About Zukas</a></li>
             <li><a href="#speakers">Speakers</a></li>
-            <li><a href="#experience">Schedule</a></li>
-            <li><a href="#">Workshops</a></li>
-            <li><a href="#">Hackathons</a></li>
-            <li><a href="#">Night Summit</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#venue">Venue</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h4>Community</h4>
           <ul>
-            <li><a href="#startups">Startups</a></li>
-            <li><a href="#investors">Investors</a></li>
-            <li><a href="#">Mentors</a></li>
+            <li><a href="#">Startups</a></li>
+            <li><a href="#">Investors</a></li>
             <li><a href="#">Volunteers</a></li>
-            <li><a href="#">Ambassadors</a></li>
+            <li><a href="#">Mentors</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
         </div>
         <div class="footer__col">
-          <h4>Info</h4>
+          <h4>Contact</h4>
           <ul>
+            <li><a href="#">info@zukas.city</a></li>
             <li><a href="#">Support</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Sponsorship</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Partnerships</a></li>
           </ul>
         </div>
+      </div>
+      <div class="footer__social">
+        <a href="#">LinkedIn</a>
+        <a href="#">X / Twitter</a>
+        <a href="#">Telegram</a>
+        <a href="#">Discord</a>
+        <a href="#">Instagram</a>
       </div>
       <div class="footer__bottom">
         <span>&copy; 2025 Zukas. All rights reserved.</span>
         <div class="footer__legal">
-          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Terms</a>
           <a href="#">Privacy</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">Manage Cookies</a>
+          <a href="#">Cookies</a>
         </div>
       </div>
     </div>

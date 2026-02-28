@@ -1,118 +1,79 @@
-// ========================================
-// ZUKAS - Mega Campus Main JS
-// ========================================
-
 document.addEventListener('DOMContentLoaded', () => {
-
-  // ---------- Mobile Menu Toggle ----------
-  const toggle = document.querySelector('.navbar__toggle');
-  const menu = document.querySelector('.navbar__menu');
-
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => {
+  // Mobile menu
+  const burger = document.getElementById('navBurger');
+  const menu = document.getElementById('navMenu');
+  if (burger && menu) {
+    burger.addEventListener('click', () => {
       menu.classList.toggle('active');
-      toggle.classList.toggle('active');
     });
-
-    // Close menu on link click
-    menu.querySelectorAll('.navbar__link').forEach(link => {
-      link.addEventListener('click', () => {
-        menu.classList.remove('active');
-        toggle.classList.remove('active');
-      });
+    menu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => menu.classList.remove('active'));
     });
   }
 
-  // ---------- Navbar Scroll Effect ----------
-  const navbar = document.querySelector('.navbar');
-  let lastScroll = 0;
-
+  // Navbar scroll shadow
+  const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
-    const currentScroll = window.scrollY;
-
-    if (currentScroll > 80) {
-      navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
+    if (window.scrollY > 50) {
+      nav.style.boxShadow = '0 4px 24px rgba(0,0,0,.3)';
     } else {
-      navbar.style.boxShadow = 'none';
+      nav.style.boxShadow = 'none';
     }
-
-    lastScroll = currentScroll;
   });
 
-  // ---------- Scroll Animations ----------
-  const observerOptions = {
-    threshold: 0.15,
-    rootMargin: '0px 0px -50px 0px'
-  };
+  // Scroll fade-up
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 
-  const observer = new IntersectionObserver((entries) => {
+  // Counter animation
+  const counterObs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  document.querySelectorAll('.fade-up').forEach(el => {
-    observer.observe(el);
-  });
-
-  // ---------- Smooth Scroll for Anchor Links ----------
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-      e.preventDefault();
-      const target = document.querySelector(anchor.getAttribute('href'));
-      if (target) {
-        const navHeight = navbar.offsetHeight;
-        const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight;
-        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-      }
-    });
-  });
-
-  // ---------- Newsletter Form ----------
-  const newsletterForm = document.querySelector('.newsletter__form');
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const email = newsletterForm.querySelector('input[type="email"]');
-      if (email && email.value) {
-        email.value = '';
-        const btn = newsletterForm.querySelector('.btn');
-        const originalText = btn.textContent;
-        btn.textContent = 'Subscribed!';
-        btn.style.background = '#22c55e';
-        setTimeout(() => {
-          btn.textContent = originalText;
-          btn.style.background = '';
-        }, 2500);
-      }
-    });
-  }
-
-  // ---------- Counter Animation ----------
-  const counters = document.querySelectorAll('.hero__stat-number');
-  const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const target = entry.target;
-        const end = parseInt(target.getAttribute('data-count'));
-        const suffix = target.getAttribute('data-suffix') || '';
-        let current = 0;
-        const increment = end / 60;
+        const el = entry.target;
+        const end = parseInt(el.dataset.count);
+        const suffix = el.dataset.suffix || '';
+        let cur = 0;
+        const inc = end / 50;
         const timer = setInterval(() => {
-          current += increment;
-          if (current >= end) {
-            current = end;
-            clearInterval(timer);
-          }
-          target.textContent = Math.floor(current).toLocaleString() + suffix;
-        }, 20);
-        counterObserver.unobserve(target);
+          cur += inc;
+          if (cur >= end) { cur = end; clearInterval(timer); }
+          el.textContent = Math.floor(cur).toLocaleString() + suffix;
+        }, 25);
+        counterObs.unobserve(el);
       }
     });
   }, { threshold: 0.5 });
+  document.querySelectorAll('.stats__number').forEach(el => counterObs.observe(el));
 
-  counters.forEach(counter => counterObserver.observe(counter));
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) {
+        const y = t.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Newsletter form
+  const forms = document.querySelectorAll('form');
+  forms.forEach(form => {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = form.querySelector('button,a.hero__cta');
+      if (btn) {
+        const orig = btn.textContent;
+        btn.textContent = 'Subscribed!';
+        btn.style.background = '#22c55e';
+        setTimeout(() => { btn.textContent = orig; btn.style.background = ''; }, 2500);
+      }
+      form.reset();
+    });
+  });
 });
